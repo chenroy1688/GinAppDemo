@@ -31,7 +31,7 @@
 
 				<!-- 作用域插槽 -->
 				<template v-slot="{one}"> <!-- one对应子组件 绑定:one="" -->
-					<p class="nameProps">作用域插槽 ....... {{ one.name }}</p>
+					<p class="nameProps">作用域插槽11 ....... {{ one.name }}</p>
 				</template>
 
 				<!-- 作用域 具名插槽 -->
