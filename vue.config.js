@@ -2,7 +2,7 @@
 //解决打包出现空白
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production'
-  ? '/backend_system/'
+  ? '/GinAppDemo/'
   : '/',
   // requireModuleExtension: false,  //去掉文件名的 .module
   css: {  
