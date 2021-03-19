@@ -1,0 +1,37 @@
+[
+  { 
+    "id":1,
+    "title":"学习Vue",
+    "src":"../../static/tag_pic.jpg",
+    "content":"这是说明文字",
+    "type":"课程类别"
+  },
+  { 
+    "id":2,
+    "title":"音速直播",
+    "src":"../../static/tag_pic.jpg",
+    "content":"内容文字内容文字",
+    "type":"课程类别"
+  },
+  { 
+    "id":3,
+    "title":"体育直播网站",
+    "src":"../../static/tag_pic.jpg",
+    "content":"这是说明文字",
+    "type":"课程类别"
+  },
+  { 
+    "id":4,
+    "title":"NBA音速",
+    "src":"../../static/tag_pic.jpg",
+    "content":"这是说明文字",
+    "type":"课程类别"
+  },
+  { 
+    "id":5,
+    "title":"学习Vue",
+    "src":"../../static/tag_pic.jpg",
+    "content":"这是说明文字",
+    "type":"课程类别"
+  }
+]
