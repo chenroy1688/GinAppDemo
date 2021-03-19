@@ -14,8 +14,8 @@ import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
 Vue.use(VueRouter)
 
-// 全局配置
-axios.defaults.baseURL = '../../static' //统一设定路径配置
+// 全局配置 统一设定路径配置
+axios.defaults.baseURL = './static'
 // axios.defaults.headers.common['Authorization'] = 'Token' 请求头配置 token授权
 // axios.defaults.headers.post['Content-type'] = 'application/urlencode'
 // axios.defaults.headers.get['Accepts'] = 'application/json'
@@ -71,7 +71,7 @@ Vue.directive('rainbow',{
 const router = new VueRouter({
 	linkActiveClass:'isActive', //选中路由的颜色
 	routes: Routes,
-	mode:"history"
+	// mode:"history"
 })
 
 //全局导航守卫 --- 判断登入
