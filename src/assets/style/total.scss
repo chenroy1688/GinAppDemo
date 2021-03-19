@@ -1,0 +1,260 @@
+﻿/* ------------------------------
+   css 通用 -- 设定
+------------------------------ */
+// @import "aside.scss";
+// @import "commonTab_set";
+
+/* extend设定 -- (继承) */
+%underline{
+    text-decoration:none;
+}
+%transition{
+    transition:all 0.5s;
+}
+
+/* mixin设定 */
+@mixin css3-line($height,$bold){
+    line-height: $height;
+    font-weight: $bold;
+}
+
+/* 颜色設定 */
+$color1 :#0000ff;
+$yellow: #f7ed2a;
+$gray999: #999;
+$gray:#d3d3d3;
+$white:white;
+$red:#ff0000;
+$black:#000;
+$taohon: #d81e29;
+
+$lineGray:1px solid #d6d3d3;
+$lineWhite:1px solid #fff;
+$bdsolid:1px solid #000;
+
+/* 文字設定 */
+$ft12:12px;
+$ft14:14px;
+$ft16:16px;
+$ft18:18px;
+$ft20:20px;
+$ft22:22px;
+
+/* 间距設定 */
+$auto:0 auto;
+$num:15px;
+$lineHeight:25px;
+
+$marginTop:var(--main-margin30) 0;
+
+/* total 共用设定 ---------------------------------------------- */
+:root{
+  /* text color setting */
+  --main-black-color: #000;
+  --main-red-color:#ff0000;
+  --main-gray999-color: #999;
+  --main-grayd3-color:#d3d3cf;
+  
+  /* padding_margin setting */
+  --main-padding15:20px;
+  --main-padding30:30px;
+
+  --main-margin20:20px;
+  --main-margin30:30px;
+
+  /* color setting */
+  --bar-main-color:rgb(232, 102, 102);
+  --top-main-color:rgb(216, 30, 41);
+  --white-main-color:rgb(255,255,255,1);
+
+  /* bg setting */
+  --main-Bggrey:#ebeced;
+  --main-Bggreycec:#cecaca;
+  --main-Bggrey999:#999;
+  --main-Bgblack:black;
+  --main-Bgblue:#2894FF;
+
+  /* border setting */
+  --main-bosGray:#ccc;
+  --main-bosGray02:#a9a9a7;
+}
+
+/* ------------------------------
+   css 通用 -- 设定
+------------------------------ */
+*{
+  margin:0;
+  padding:0;
+  list-style:none;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing:border-box;
+  box-sizing: border-box;
+}
+html, body { min-height: 100%;}
+.none{display:none !important;}
+.bos{border:1px solid $red}
+.bos2{border:1px solid $color1}
+
+.el_div{
+  padding:20px;
+  border:$lineGray;
+  span.topic{
+    display:block;
+    font-size:14px;
+    padding:10px 0;
+  }
+  > .el-input{ 
+      /deep/ .el-input__inner{ //深层作用选择器更改scss设定
+          width:200px;
+          color:#fff;
+          border:1px solid #999;
+          background-color:#333;
+      }
+  }
+  h3{
+    font-size:18px;
+    padding:0 0 30px 0;
+  }
+}
+.el_div_noBor{
+  padding:20px;
+  background-color:$gray;
+}
+
+img { width: 100%; }
+span { vertical-align: baseline; }
+p { margin: 0;}
+a{
+  transition:all 0.5s;
+  text-decoration: none;
+}
+
+.contact_info{
+  padding:15px;
+  color:#d74554;
+  border:1px solid var(--main-grayd3-color);
+}
+.contact_info h1{
+  color:#d74554;
+}
+
+button{
+  padding:10px 6px;
+  color:#fff;
+  font-size:14px;
+  text-align:center;
+  border-style:none;
+  // background-color:#000;
+  border-radius: 4px;
+  cursor: pointer;
+  overflow:hidden;
+}
+input{
+  width:250px;
+  height:40px;
+  padding:8px;
+  margin-right:15px;
+  font-size:16px;
+  color:#ff0000;
+}
+.overFlow{ overflow:hidden; }
+
+ul,li { margin: 0; padding: 0; list-style: none; }
+*:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/* 图片 懒加载设定 ---------------------------------------------- */
+.img-box{
+  //loading图片大小
+  // img[lazy="loading"] {
+  //     width:500px;
+  //     height:auto;
+  //     margin-top:30px;
+  // }
+  //实际图片大小
+  // img[lazy="loaded"] {
+  //     width:600px;
+  //     height:auto;
+  //     margin-top:30px;
+  // }
+}
+
+
+/* 按鈕作用 ---------------------------------------------- */
+.isActive{
+  background-color:#d81e2b !important;
+}
+.btnActive{
+  color:#fff !important;
+  background-color:var(--main-Bgblack) !important;
+}
+
+
+body{
+  margin:0;
+  padding:0;
+  height:100%; 
+  position: relative; /* 统一定位 */
+  font-family: arial,'Microsoft YaHei','SimHei','Microsoft JhengHei',"微軟正黑體";
+}
+
+/* total 外层设定 ---------------------------------------------- */
+.total_wrap{
+  min-width:100%;
+  width:100%;
+  min-height:100vh;
+  .total_content{
+    position:relative;
+    display:inline-flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    width:100%;
+    height:100%;
+    background-color:#fff;
+    margin:0 auto;
+  }
+}
+
+/* ------------------------------
+   mask checkbox -- 设定
+------------------------------ */
+.mask{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  overflow-y:hidden;
+  background:rgba(0,0,0,0.8);
+  z-index:999;
+  .jmpView{
+    position:absolute;
+    width:50%;
+    height:auto;
+    padding:25px;
+    top:50%;
+    left:50%;
+    border-radius: 7px;
+    transform:translateX(-50%) translateY(-50%);
+    -ms-transform:translateX(-50%) translateY(-50%);
+    -moz-transform:translateX(-50%) translateY(-50%);
+    -webkit-transform:translateX(-50%) translateY(-50%);
+    -o-transform:translateX(-50%) translateY(-50%);
+    background-color:#fff;
+    .edit_content{
+      margin-top:30px;
+    }
+    .del-body{
+      margin-top:25px;
+      button{
+        width:48%;
+      }
+    }
+  }
+}
+
+
+
+
