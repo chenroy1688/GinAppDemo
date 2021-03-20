@@ -10,6 +10,8 @@ import 'element-ui/lib/theme-chalk/index.css'
 
 //全局 -- 引入外部scss档案
 // import './assets/style/total.scss'
+//全局統一路徑
+import { publicPath } from '../vue.config'
 
 Vue.use(ElementUI)
 Vue.use(VueRouter)
@@ -69,6 +71,7 @@ Vue.directive('rainbow',{
 
 // 创建路由
 const router = new VueRouter({
+	base:publicPath,
 	linkActiveClass:'isActive', //选中路由的颜色
 	routes: Routes,
 	// mode:"history"

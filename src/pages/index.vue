@@ -5,7 +5,7 @@
 		<section>
 			<p class="indexPage-title">
 				尊敬的 <span class="accColor">{{ userInfo.account }}</span> <!-- this.$store.getters.getMemType -->
-				<span>欢迎来到音速直播</span>
+				<span>欢迎来到音速直播999</span>
 			</p>
 			<div class="indexPage-classType">
 				<ul><!-- 渲染数据 -->
