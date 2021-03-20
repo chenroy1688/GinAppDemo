@@ -72,7 +72,7 @@
 				items:[ //选单数据
 					{
 						id:1,
-						title:'首页',
+						title:'首页99',
 						href:'/',
 						icon:'icon-home3',
 						color:'#d91f2c' //icon 顏色

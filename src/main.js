@@ -15,7 +15,7 @@ Vue.use(ElementUI)
 Vue.use(VueRouter)
 
 // 全局配置 统一设定路径配置
-axios.defaults.baseURL = './static'
+// axios.defaults.baseURL = './static'
 // axios.defaults.headers.common['Authorization'] = 'Token' 请求头配置 token授权
 // axios.defaults.headers.post['Content-type'] = 'application/urlencode'
 // axios.defaults.headers.get['Accepts'] = 'application/json'

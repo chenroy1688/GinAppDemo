@@ -39,7 +39,7 @@
 	//引入vuex
 	import {mapState, mapGetters, mapMutations, mapActions} from 'vuex'
 	//引入封装api接口
-	import { prodDataApi } from '../api/api'
+	// import { prodDataApi } from '../api/api'
 	import slotchild from '../slotDemo/slotChild.vue'
 
 	export default{
@@ -104,13 +104,22 @@
 			// 			console.log('请求错误!!')
 			// 		})
 			// },
-			//获取产品数据
 			getProdsData(){
-				prodDataApi()
-					.then(res => {
-						this.prodData = res.data;
-					})	
+				this.$http.get('/static/prdDatas.json')
+				.then(res =>{
+					this.prodData = res.data
+				})
+				.catch(res => {
+					console.log('请求错误!!')
+				})
 			},
+			//获取产品数据
+			// getProdsData(){
+			// 	prodDataApi()
+			// 		.then(res => {
+			// 			this.prodData = res.data;
+			// 		})	
+			// },
 			// recharge(){
 			// 	this.$router.push('/userCenter')
 			// },
