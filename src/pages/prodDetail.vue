@@ -21,7 +21,7 @@
 // import {mapState, mapGetters, mapMutations, mapActions} from 'vuex'
 // import store from '../store'
 //引入封装api接口
-	import { prodDataApi } from '../api/api'
+	import { prodDataApi } from '@/api/api'
   
 export default {
   name: 'show-blogs',
