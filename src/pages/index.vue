@@ -18,7 +18,7 @@
 								</router-link>
 							</div>
 							<div class="divRight">
-								<router-link :to="'/proDetail' + item.id">
+								<router-link :to="'/prodDetail' + item.id">
 									<h2>{{ item.title }}</h2>
 									<p>{{ item.content }}</p>
 								</router-link>

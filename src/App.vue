@@ -14,7 +14,7 @@
 
       <!-- 底部导航 -->
       <transition name="fade" mode="out-in">
-          <router-view name="Navbottom"></router-view>
+          <router-view name="Navbottom" class="none"></router-view>
       </transition>
   </div>
 </template>
@@ -37,5 +37,7 @@ export default {
 </script>
 
 <style>
-
+.none{
+  display:none !important;
+}
 </style>
