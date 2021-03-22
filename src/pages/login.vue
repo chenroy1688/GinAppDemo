@@ -14,7 +14,7 @@
 				<label v-rainbow>密码</label>
 				<input type="password" class="form-control" v-model="form.password" placeholder="请输入密码" required>
 			</div>
-			<div>帐密 : aaaa / 0000</div>
+			<!-- <div>帐密 : aaaa / 0000</div> -->
 			<button type="submit" class="btn_full">登录</button>
 			<!-- <a href="javascript:void(0)" class="btn_full" @click.enter="login">登录</a> -->
 		</form>
@@ -33,8 +33,8 @@ export default{
 			titleInfo:'音速直播課程',
 			//會員登入數據
 			form:{
-				account:'',
-				password:''
+				account:'aaaa',
+				password:'0000'
 			}
 		}
 	},
