@@ -2,7 +2,7 @@
   {
     "id":1,
     "title":"学习Vue课程12",
-    "src":"../../static/tag_pic.jpg",
+    "src":"./static/tag_pic.jpg",
     "content":"紅雀隊韓籍投手金廣鉉經歷腎臟血管阻塞，昨天重返賽場，對釀酒人隊投出七局無失分優質先發，但隊友火力零支援，紅雀以一比二輸球，他在大聯盟前五場先發防禦率僅○點三三，寫下史上第二低新人紀錄。",
     "charge":190,
     "href":"/prodDetail"
@@ -10,7 +10,7 @@
   {
     "id":2,
     "title":"相關產品B",
-    "src":"../../static/tag_pic2.jpg",
+    "src":"./static/tag_pic2.jpg",
     "content":"印地安人今做出球員異動，由於主戰二壘手賀南德茲（Cesar Hernandez）請育嬰假，因此球團從訓練營拉上張育成填補空缺，張育成再度獲得大聯盟出賽機會。",
     "charge":190,
     "href":"/prodDetail"
@@ -18,7 +18,7 @@
   {
     "id":3,
     "title":"相關產品CC",
-    "src":"../../static/tag_pic3.jpg",
+    "src":"./static/tag_pic3.jpg",
     "content":"統一獅三壘手郭阜林回到一軍相近1個月期間，15日晚間在台南球場擊出今年第15號全壘打，這是郭阜林下半季19場第7轟，下半季長打率衝到.754高於富邦悍將高國輝.746，台灣中華職棒（CPBL）最高。",
     "charge":560,
     "href":"/prodDetail"
@@ -26,7 +26,7 @@
   {
     "id":4,
     "title":"相關DDD",
-    "src":"../../static/tag_pic4.jpg",
+    "src":"./static/tag_pic4.jpg",
     "content":"清晨六點多發生兩女子受困意外，消防局前往救援，現場離岸邊約500公尺，水深快到頭部，情況危及，消防局申請直昇機和海巡署快艇，但至少要四十分鐘，緩不濟急，消防員立即下水，奮力游到受困民眾附近",
     "charge":990,
     "href":"/prodDetail"
@@ -34,7 +34,7 @@
   {
     "id":5,
     "title":"学习EEEE",
-    "src":"../../static/tag_pic2.jpg",
+    "src":"./static/tag_pic2.jpg",
     "content":"警方調查，連男有殺人未遂、槍砲等前科，和家人同住，但他否認持有槍毒，僅說相關槍毒物品是1名友人寄放，但他忘了這名友人的綽號，也不知真實年齡，沒有聯絡方法，友人已經去世了。",
     "charge":480,
     "href":"/prodDetail"
@@ -42,7 +42,7 @@
   {
     "id":6,
     "title":"学习Vue课程",
-    "src":"../../static/tag_pic.jpg",
+    "src":"./static/tag_pic.jpg",
     "content":"縣府農業處畜產保育科長石蕙菱表示，豬農對現在豬價每公斤71元，抱持觀望態度，不過，假設中秋節後豬價持續下降，恐怕會影響豬農生計；對此，農委會計畫運用「百億養豬產業基金」",
     "charge":300,
     "href":"/prodDetail"
