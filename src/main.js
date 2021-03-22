@@ -26,7 +26,6 @@ Vue.prototype.$http = axios
 //引入css
 import './assets/css/reset.css'  //重置设定
 import './assets/css/common.css' //通用设定
-
 import './assets/css/icon.css' //iconmoon字体图标
 
 Vue.config.productionTip = false

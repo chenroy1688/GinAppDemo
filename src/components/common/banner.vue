@@ -21,9 +21,12 @@
 				n:0,
 				//轮播图  '../../../static/bannerPic/banner1.jpg' (放在static资料夹无需用require)
 				img:[ 
-						require('../../assets/image/banner1.jpg'),
-						require('../../assets/image/banner2.jpg'),
-						require('../../assets/image/banner3.jpg'),
+						// require('../../assets/image/banner1.jpg'),
+						// require('../../assets/image/banner2.jpg'),
+						// require('../../assets/image/banner3.jpg'),
+						'./static/bannerPic/banner1.jpg',
+						'./static/bannerPic/banner2.jpg',
+						'./static/bannerPic/banner3.jpg',
 					]
 			}
 		},

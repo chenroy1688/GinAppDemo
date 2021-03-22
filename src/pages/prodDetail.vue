@@ -7,7 +7,7 @@
         <img :src="item.src"/>
         <h3>{{ id }} -- {{ item.title }}</h3>
         <p class="course-content-p">
-            <!-- 购买功能购买功能购买功能购买功能购买功能购买功能购买功能购买功能 -->
+            <!-- 购买功能 -->
             {{ item.content }}
         </p>
         <p class="course-content-p price">价格 : {{ item.charge }}</p>
