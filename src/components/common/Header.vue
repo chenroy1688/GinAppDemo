@@ -15,7 +15,7 @@
 			<!-- 轮播组件 -->
 			<banner/>
 			<!-- 插槽slot demo -->
-			<slotChild>
+			<slotChild class="none">
 				<!-- 如果slotchild組件裡面沒有 定義slot時 寫在child標籤裡面的內容不會顯示 -->
 				<!-- 具名插槽  -->
 				<!-- <template v-slot:center> 
@@ -72,7 +72,7 @@
 				items:[ //选单数据
 					{
 						id:1,
-						title:'首页99',
+						title:'首页',
 						href:'/',
 						icon:'icon-home3',
 						color:'#d91f2c' //icon 顏色
@@ -127,6 +127,9 @@
 </script>
 
 <style >
+.none{
+	display:none;
+}
 .bos{
 	border:1px solid #ff0000;
 }

@@ -4,8 +4,9 @@
 		<h1 v-rainbow>音速体育直播</h1>
 		<section>
 			<p class="indexPage-title">
-				尊敬的 <span class="accColor">{{ userInfo.account }}</span> <!-- this.$store.getters.getMemType -->
-				<span>欢迎来到音速直播999</span>
+				<!-- this.$store.getters.getMemType -->
+				尊敬的 <span class="accColor">{{ userInfo.account }}</span> 
+				<span>欢迎来到音速商城</span>
 			</p>
 			<div class="indexPage-classType">
 				<ul><!-- 渲染数据 -->
@@ -17,8 +18,10 @@
 								</router-link>
 							</div>
 							<div class="divRight">
-								<h2>{{ item.title }}</h2>
-								<p>{{ item.content }}</p>
+								<router-link :to="'/proDetail' + item.id">
+									<h2>{{ item.title }}</h2>
+									<p>{{ item.content }}</p>
+								</router-link>
 								<p class="charge_p">价格 : {{ item.charge }}</p>
 							</div>
 					</li>
@@ -54,28 +57,28 @@
 					{ 
 						id:1,
 						title:'学习Vue课程',
-						src:'../../static/tag_pic.jpg',
+						src:'./static/tag_pic.jpg',
 						content:'这是说明文字',
 						charge:190,
 					},
 					{ 
 						id:2,
 						title:'进阶2课程',
-						src:'../../static/tag_pic2.jpg',
+						src:'./static/tag_pic2.jpg',
 						content:'这是说明文字',
 						charge:360,
 					},
 					{ 
 						id:3,
 						title:'php进阶3课程',
-						src:'../../static/tag_pic3.jpg',
+						src:'./static/tag_pic3.jpg',
 						content:'这是说明文字',
 						charge:560,
 					},
 					{ 
 						id:4,
-						title:'课程004',
-						src:'../../static/tag_pic4.jpg',
+						title:'VUE课程',
+						src:'./static/tag_pic4.jpg',
 						content:'这是说明文字',
 						charge:1000,
 					}
