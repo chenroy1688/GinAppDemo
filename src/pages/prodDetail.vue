@@ -21,7 +21,7 @@
 // import {mapState, mapGetters, mapMutations, mapActions} from 'vuex'
 // import store from '../store'
 //引入封装api接口
-	import { prodDataApi } from '@/api/api'
+	// import { prodDataApi } from '@/api/api'
   
 export default {
   name: 'show-blogs',
@@ -41,22 +41,22 @@ export default {
   },
   methods:{
     //請求點擊當下數據
-    // getProdsDetail(){
-    //   this.$http.get('/static/prdDatas.json')
-		// 		.then(res =>{
-		// 			  this.prodData = res.data.filter( item => item.id === this.id )
-    //         console.log('000',this.prodData)
-		// 		})
-    // },
-    //請求點擊當下數據
     getProdsDetail(){
-      prodDataApi()
-        .then(res => {
-            //console.log(typeof this.id)  取出對應id的數據
-            this.prodData = res.data.filter( item => item.id === this.id )
+      this.$http.get('./static/prdDatas.json')
+				.then(res =>{
+					  this.prodData = res.data.filter( item => item.id === this.id )
             console.log('000',this.prodData)
-        })
+				})
     },
+    //請求點擊當下數據
+    // getProdsDetail(){
+    //   prodDataApi()
+    //     .then(res => {
+    //         //console.log(typeof this.id)  取出對應id的數據
+    //         this.prodData = res.data.filter( item => item.id === this.id )
+    //         console.log('000',this.prodData)
+    //     })
+    // },
     back(){
       this.$router.go(-1)
     }
