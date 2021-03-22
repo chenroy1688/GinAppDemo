@@ -105,7 +105,7 @@
 			// 		})
 			// },
 			getProdsData(){
-				this.$http.get('/static/prdDatas.json')
+				this.$http.get('./static/prdDatas.json')
 				.then(res =>{
 					this.prodData = res.data
 				})

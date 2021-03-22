@@ -44,6 +44,7 @@ export default {
     getProdsDetail(){
       this.$http.get('./static/prdDatas.json')
 				.then(res =>{
+          console.log(res)
 					  this.prodData = res.data.filter( item => item.id === this.id )
             console.log('000',this.prodData)
 				})
