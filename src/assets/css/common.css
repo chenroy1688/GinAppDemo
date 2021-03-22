@@ -252,9 +252,9 @@ span.item-content_date{
   button,
 	.editBtn{
 		font-size:2.5vw !important;
-    margin-top:3vw !important;
+    margin-top:1vw !important;
     margin-left:1.5vw;
-		padding:2.5vw !important;
+		/* padding:2.5vw !important; */
   }
 }
 @media screen and (max-width:480px) {

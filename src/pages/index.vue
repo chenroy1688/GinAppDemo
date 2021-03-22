@@ -8,6 +8,7 @@
 				尊敬的 <span class="accColor">{{ userInfo.account }}</span> 
 				<span>欢迎来到音速商城</span>
 			</p>
+			<div class="chkdetail">* 請點擊圖片瀏覽詳細頁面</div>
 			<div class="indexPage-classType">
 				<ul><!-- 渲染数据 -->
 					<li v-for="(item,index) in prodData" :key="index">
@@ -140,6 +141,10 @@
 </script>
 
 <style>
+.chkdetail{
+	font-size:2.5vw;
+	padding:0 0 2vw 0;
+}
 /* .boss{border:1px solid #ff0000;} */
 .accColor{
 	color:#0000ff !important;

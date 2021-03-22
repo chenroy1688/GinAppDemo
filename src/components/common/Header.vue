@@ -3,6 +3,7 @@
 		<div class="headTop header-content" id="my">
 			<header>
 				GinApp / 帐号 : {{ userInfo.account }}
+				<button type="button" @click.prevent="logout" class="head_login">登出</button>
 			</header>
 			<!-- 圓形icon 主选单 -->
 			<div class="header-category">
@@ -121,12 +122,31 @@
 			...mapState(['userInfo'])
 		},
 		methods:{
-		
+			logout(){
+				//登出确认
+				this.$confirm('确认退出吗?','提示',{
+				}).then(() => {
+						localStorage.removeItem('token'); //登出時 刪除token	
+						this.$router.push('/login');      //导回登入页
+				}).catch(() => {
+
+				});
+			}
 		}
 	}
 </script>
 
 <style >
+.head_login{
+	width:12vw;
+	line-height:5vw;
+	padding:0;
+	font-size:2vw;
+	background-color:#000;
+	color:#fff;
+	border-style:none;
+	border-radius: 1vw;
+}
 .none{
 	display:none;
 }
